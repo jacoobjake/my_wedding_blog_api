@@ -1,0 +1,18 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: my-wedding-blog-api
+    src: ./
+    engine: python3.9
+    primary: true
+    public: true
+    run: uvicorn my_wedding_blog_api.asgi:application
+    dev: uvicorn my_wedding_blog_api.asgi:application --reload
+    presets:
+      env:
+        - name: TESTING
+          description: Testing
+          default: "Testing"
+        - name: MONGO_DB_HOST
+          description: MongoDB host url
+          default: mongodb+srv://root:xaWvG2g37g5xPTx2@cluster0.0egj4jg.mongodb.net/?retryWrites=true&w=majority

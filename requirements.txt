@@ -1,0 +1,8 @@
+django
+uvicorn
+djangorestframework
+django-rest-framework-mongoengine
+mongoengine
+httptools
+pydantic-settings
+django-cors-headers
