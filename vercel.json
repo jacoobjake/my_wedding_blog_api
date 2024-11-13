@@ -1,8 +1,17 @@
 {
+  "builds": [
+    {
+      "src": "my_wedding_blog_api/asgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "runtime": "python3.9"
+      }
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "my_wedding_blog_api/wsgi.py"
+      "dest": "my_wedding_blog_api/asgi.py"
     }
   ]
 }
