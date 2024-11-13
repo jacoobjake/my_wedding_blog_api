@@ -1,6 +1,11 @@
 {
   "version": 2,
-  "buildCommand": "uvicorn my_wedding_blog_api.asgi:application",
+  "builds": [
+    {
+      "src": "serve.py",
+      "use": "@vercel/python"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
