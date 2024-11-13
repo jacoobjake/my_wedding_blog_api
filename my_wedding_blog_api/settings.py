@@ -93,7 +93,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'my_wedding_blog_api.wsgi.application'
+WSGI_APPLICATION = 'my_wedding_blog_api.wsgi.app'
 
 
 # Database
