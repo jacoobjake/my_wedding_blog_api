@@ -6,8 +6,8 @@ micros:
     engine: python3.9
     primary: true
     public: true
-    run: uvicorn my_wedding_blog_api.asgi:application
-    dev: uvicorn my_wedding_blog_api.asgi:application --reload
+    run: uvicorn my_wedding_blog_api.asgi:app
+    dev: uvicorn my_wedding_blog_api.asgi:app --reload
     presets:
       env:
         - name: TESTING

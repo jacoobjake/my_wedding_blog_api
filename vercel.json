@@ -1,15 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "my_wedding_blog_api/asgi.py",
-      "use": "@vercel/python"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "my_wedding_blog_api/asgi.py"
+      "dest": "my_wedding_blog_api/wsgi.py"
     }
   ]
 }
