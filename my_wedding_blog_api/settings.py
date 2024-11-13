@@ -32,10 +32,10 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
-    r"^https://\w+\.my-wedding-blog.pages.dev$",
+    r"^https://\w+\.jlg-2023.pages.dev$",
 ]
 
-CORS_ALLOW_ALL_ORIGINS=True
+# CORS_ALLOW_ALL_ORIGINS=True
 
 CORS_ALLOW_METHODS = (
     "DELETE",
