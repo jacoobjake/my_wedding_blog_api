@@ -1,0 +1,1 @@
+web: uvicorn my_wedding_blog_api.asgi:application
