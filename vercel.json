@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "buildCommand": "pip install -r requirements.txt && uvicorn my_wedding_blog_api.asgi:application",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/my_wedding_blog_api/wsgi.py"
+    }
+  ]
+}
